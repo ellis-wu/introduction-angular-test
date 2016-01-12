@@ -19,7 +19,29 @@
 # 前端測試工具簡單整理和比較
 
 ### Karma
-Angular 團隊開發的測試環境，可支持多種設備測試，且可在它之上搭配 Jasmine、Mocha 等測試工具。
+Angular 團隊開發的測試環境，可支持多種設備測試，且可在它之上搭配```Jasmine```、```Mocha```等測試工具。
 
 ### PhantomJS
-為無介面的 Webkit Kernel 瀏覽器，提供一系列操作介面的 API，可以在 node 操作真實的瀏覽器介面。
+為無介面的```Webkit``` Kernel 瀏覽器，提供一系列操作介面的 API，可以在節點上操作真實的瀏覽器介面。
+
+### [Jasmine](http://jasmine.github.io/2.0/introduction.html) vs [Mocha](https://mochajs.org/)
+皆為測試框架，而出現的時間順序為```Jasmin``` -> ```Mocha```。以下將比較兩者優缺點。
+
+##### Mocha
+* 優點：
+	* 終端顯示友好
+	* 自身同時支持```Node.js```跟```broswer```
+	* 擴展性佳
+* 缺點：
+	* 沒有```spy```與```斷言```，但可搭配[sinon](http://sinonjs.org/docs/#sinonspy)與[chi](http://chaijs.com/)
+
+##### Jasmine
+* 優點：
+	* 為一 BDD/TDD 框架
+	* 配置方便
+	* 主打 Broswer 端，介面風格清新
+* 缺點：
+	* 自身不支持```node.js```，要借助第三方工具 [jasmine-node](https://github.com/mhevery/jasmine-node)，因此有版本迭代跟不上的問題
+	* 
+
+
