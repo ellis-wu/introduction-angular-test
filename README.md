@@ -27,11 +27,17 @@ Angular 團隊開發的測試環境，可支持多種設備測試，且可在它
 ### [Jasmine](http://jasmine.github.io/2.0/introduction.html) vs [Mocha](https://mochajs.org/)
 皆為測試框架，而出現的時間順序為```Jasmin``` -> ```Mocha```。以下將比較兩者優缺點。
 
+> 可參考：
+> 1. [Which JavaScript Test Library Should You User? QUnit vs Jasmine vs Mocha](http://www.techtalkdc.com/which-javascript-test-library-should-you-use-qunit-vs-jasmine-vs-mocha/)
+> 2. [Comparison of three major javascript unit testing frameworks](https://github.com/thegrtman/javascript-test-framework-comparison)
+
 ##### Mocha
 * 優點：
+	* 配置簡單
 	* 終端顯示友好
 	* 自身同時支持```Node.js```跟```broswer```
 	* 擴展性佳
+	* 擁有更好的 BDD 和 TDD 導向功能的 libraries
 * 缺點：
 	* 沒有```spy```與```斷言```，但可搭配[sinon](http://sinonjs.org/docs/#sinonspy)與[chi](http://chaijs.com/)
 
@@ -40,8 +46,9 @@ Angular 團隊開發的測試環境，可支持多種設備測試，且可在它
 	* 為一 BDD/TDD 框架
 	* 配置方便
 	* 主打 Broswer 端，介面風格清新
+	* 內建```斷言```語法
 * 缺點：
+	* 雖內建```斷言```語法，但無法與其他```斷言 libraries```配合得很好。
+	* 異步測試不佳
 	* 自身不支持```node.js```，要借助第三方工具 [jasmine-node](https://github.com/mhevery/jasmine-node)，因此有版本迭代跟不上的問題
-	* 
-
-
+	* 終端顯示較不友好
