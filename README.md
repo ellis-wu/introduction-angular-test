@@ -27,12 +27,6 @@ Angular 團隊開發的測試環境，可支持多種設備測試，且可在它
 ### [Jasmine](http://jasmine.github.io/2.0/introduction.html) vs [Mocha](https://mochajs.org/)
 皆為測試框架，而出現的時間順序為```Jasmin``` -> ```Mocha```。以下將比較兩者優缺點。
 
-> 可參考：
->
-> 1. [Which JavaScript Test Library Should You User? QUnit vs Jasmine vs Mocha](http://www.techtalkdc.com/which-javascript-test-library-should-you-use-qunit-vs-jasmine-vs-mocha/)	
-> 
-> 2. [Comparison of three major javascript unit testing frameworks](https://github.com/thegrtman/javascript-test-framework-comparison)
-
 #### Mocha
 * 優點：
 	* 配置簡單
@@ -54,3 +48,10 @@ Angular 團隊開發的測試環境，可支持多種設備測試，且可在它
 	* 異步測試不佳
 	* 自身不支持```node.js```，要借助第三方工具 [jasmine-node](https://github.com/mhevery/jasmine-node)，因此有版本迭代跟不上的問題
 	* 終端顯示較不友好
+
+> 可參考：  
+> 1. [Which JavaScript Test Library Should You User? QUnit vs Jasmine vs Mocha](http://www.techtalkdc.com/which-javascript-test-library-should-you-use-qunit-vs-jasmine-vs-mocha/)	
+> 2. [Comparison of three major javascript unit testing frameworks](https://github.com/thegrtman/javascript-test-framework-comparison)
+>
+> 結論：  
+> 以上選擇 Mocha 原因為其配置簡單乾淨，且具有極大的靈活性與可用性。
