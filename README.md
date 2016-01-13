@@ -35,7 +35,7 @@ Angular 團隊開發的測試環境，可支持多種設備測試，且可在它
 	* 擴展性佳
 	* 擁有更好的 BDD 和 TDD 導向功能的 libraries
 * 缺點：
-	* 沒有```spy```與```斷言```，但可搭配[sinon](http://sinonjs.org/docs/#sinonspy)與[chi](http://chaijs.com/)
+	* 沒有```spy```與```斷言```，但可搭配[sinon](http://sinonjs.org/docs/#sinonspy)與[chai](http://chaijs.com/)
 
 #### Jasmine
 * 優點：
